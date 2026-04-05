@@ -1,53 +1,34 @@
-# Super-Hack-Installer-Beta
-this is a installer , not mod menu
-# Super Hack Installer Beta
+# Super Hack Installer
 
-Super Hack Installer Beta is an installer for Geometry Dash, making it easy to install hacks/extensions.
+An experimental Geometry Dash mod built with the Geode SDK.
 
-⚠️ This is **not** a menu mod.
+## 🚀 Features
+- Hooks directly into the game via Geode.
+- Easy integration with other mods.
+- Clean, modern C++23 codebase.
 
-## ✨ Features
-- License key entry popup for authentication.
+## 📦 Requirements
+- [Geode SDK](https://geode-sdk.org) (set the `GEODE_SDK` environment variable to point to the SDK).
+- CMake >= 3.21
+- Visual Studio (MSVC) or any compiler supporting C++23.
 
-- Intuitive and easy-to-use "Install" button.
-
-- Valid key check before installation.
-
-- Simple and easy-to-understand interface.
-
-## 📂 Structure
-
-- `src/main.cpp`: Main code, handles UI and key entry logic.
-
-- `build/`: Directory containing build files (DLLs, .geode).
-
-- `README.md`: Project description document.
-
-## 🚀 How to build
-1. Clone the repo:
-
+## 🔧 Build Instructions
 ```bash
+# Remove old build
+rmdir /s /q build
 
-git clone https://github.com/Bil966/Super-Hack-Installer-Beta.git
-2. Navigate to the project directory:
-
-cd Super-Hack-Installer-Beta
-3. Build using CMake:
-
+# Build again
 geode build
-## 🛠️ Requirements
-Visual Studio + CMake
 
-Geode SDK
 
-Geometry Dash (for plugin testing)
 
-💰 Pricing
-Currently: Free for all users.
 
-Future: Will switch to paid with advanced features.
+Super Hack Installer/
+├─ src/
+│  └─ main.cpp
+├─ CMakeLists.txt
+└─ README.md
 
-📜 License
-This project is released under the MIT License.
 
-You may use, modify, and redistribute it provided you retain the license information.
+
+
